@@ -1,0 +1,64 @@
+.container {
+    min-height: 100vh;    
+}
+
+.nav-custom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.nav-custom a {
+    color: cadetblue !important;
+    font-size: 3vw;
+    text-decoration: none;
+}
+
+.-gallery {
+    max-width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.artwork img {
+    width: 25vw;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin: 0px;
+}
+
+.artwork h2 {
+    /* position: absolute;
+    margin-top: 2%;
+    margin-left: 3vw;
+    font-size: 1.5vw;
+    text-shadow: 0px 0px 6px whitesmoke;
+    color: whitesmoke; */
+}
+.artwork h3 {
+    /* display: flex;
+    justify-content: end;
+    margin-top: -10%;
+    margin-right: 3vw;
+    font-size: 2vw;
+    text-shadow: 0px 0px 6px whitesmoke;
+    color: white; */
+}
+
+
+.container {
+    padding: 50px;
+}
+
+.container p {
+    font-size: 1.5vw;
+}
+
+.container img {
+    max-width: 40vw;
+    height: auto;
+}
