@@ -7,77 +7,58 @@
     <meta charset="UTF-8">
     <!-- File Refernces -->
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/navigation.css">
+    <link rel="stylesheet" href="/styles/media.css">
+    <!-- Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icons from Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,200" />
     <link rel="shortcut icon" href="/assets/images/shorcut.jpeg">
     <!-- Title is shown on Tab -->
     <title>Lowbrow Art: Site by Gui</title>
 </head>
 <!-- Site Navigation -->
-<div class="nav-custom">
-    <a href="#home">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#history">History</a>
-    <a href="#contact">Contact</a>
-</div>
 <body>
-    <!-- Landing Section with Main graphic -->
-    <section id="#home" class="container">
-        <h1 style="font-size: 9vw; margin-bottom: 0;">Lowbrow</h1>
-        <h1 style="font-size: 3vw; margin-left:5vw;">From Underground to Mainstream</h1>
-        <div class="-gallery">
-            <img src="/assets/images/The-Origins-of-Life.jpg">
-            <img src="/assets/images/Little-Prince.jpg">
+    <nav>
+        <div class="custom-nav">
+            <a href="#home">
+                <div class="custom-icon">
+                    <span style="color: gold;" class="material-symbols-outlined icon-bg">humidity_high</span>
+                    <span class="material-symbols-outlined icon-ft">home</span>
+                    <p style="color: gold;">Home</p>
+                </div>
+            </a>
+            <a href="#history">
+                <div class="custom-icon">
+                    <span style="color: darkgreen;" class="material-symbols-outlined icon-bg">humidity_high</span>
+                    <span class="material-symbols-outlined icon-ft">history_edu</span>
+                    <p style="color: darkgreen;">History</p>
+                </div>
+            </a>
+            <a href="#gallery">
+                <div class="custom-icon">
+                    <span style="color: darkblue;" class="material-symbols-outlined icon-bg">humidity_high</span>
+                    <span class="material-symbols-outlined icon-ft">gallery_thumbnail</span>
+                    <p style="color: darkblue;">Gallery</p>
+                </div>
+            </a>
         </div>
-        <br>
-        <p>Lowbrow art, also known as pop surrealism, is a subculture that emerged in the 1970s and 1980s as a reaction to the highbrow art world. This movement is characterized by its bold, provocative style and use of popular culture references, such as comic books and graffiti. Lowbrow artists often use bright colors and exaggerated features to create surreal, thought-provoking imagery.</p>
-    </section>
-    <!-- Gallery of Artwork -->
-    <section id="#gallery" class="container">
-        <h1 style="font-size: 9vw; margin-top: 0; margin-bottom: 0;">Gallery</h1>
-        <h1 style="font-size: 3vw; margin-left:5vw;">A collection of works</h1>
-        <div id="#gallery" class="-gallery">
-            <!-- Articles used to create 'cards' with artwork information -->
-            <article class="artwork">
-                <!-- Artist of artwork -->
-                <h2>Anthony Ausgang</h2>
-                <!-- Image of artwork -->
-                <img src="/assets/images/The-Origins-of-Life.jpg">
-                <!-- Title of artwork -->
-                <h3>"The Origin of Life"</h3>
-            </article>
-            <article class="artwork">
-                <h2>Anthony Ausgang</h2>
-                <img src="/assets/images/Little-Prince.jpg">
-                <h3>"Little Prince"</h3>
-            </article>
-            <article class="artwork">
-                <h2>Esao Andrews</h2>
-                <img src="/assets/images/Community-Zoo.jpg">
-                <h3>"Community Zoo"</h3>
-            </article>
-            <article class="artwork">
-                <h2>Esao Andrews</h2>
-                <img src="/assets/images/Rattler.jpg">
-                <h3>"Rattler"</h3>
-            </article>
-            <article class="artwork">
-                <h2>Tara McPherson</h2>
-                <img src="/assets/images/Magnetic-Destroyer.jpg">
-                <h3>"Magnetic Destroyer"</h3>
-            </article>
-            <article class="artwork">
-                <h2>Tara McPherson</h2>
-                <img src="/assets/images/Bloom.jpg">
-                <h3>"Bloom"</h3>
-            </article>            
-        </div>
-        <br>
-        <p>One of the most notable features of lowbrow art is its use of pop culture references. From comic books to anime to graffiti, lowbrow artists are known for incorporating elements of popular culture into their work. This gives their art a relatable, accessible quality that many highbrow art forms lack. Lowbrow art is also known for its bold, provocative style. Artists often use bright colors and exaggerated features to create surreal, thought-provoking imagery.</p>
-    </section>
-    <!-- Informative history section -->
-    <section id="#history" class="container">
-        <h1 style="font-size: 9vw; margin-bottom: 0;">History</h1>
-        <p>The origins of the lowbrow art movement can be traced back to the 1970s and 1980s, when a group of artists in Los Angeles began to push back against the highbrow art world. These artists, who were often outsiders and misfits, found inspiration in the popular culture that surrounded them. They began to create art that reflected their own experiences and perspectives, and this gave rise to a new subculture of art that was both bold and provocative.</p>
-        <p>In recent years, lowbrow art has gained mainstream acceptance and has become increasingly popular. Many galleries and museums have begun to feature lowbrow art in their exhibitions, and it has become an established art form in its own right. Despite its increasing popularity, lowbrow art remains true to its roots as a subculture of pop surrealism, and continues to push boundaries and break the mold in the art world.</p>
-    </section>
+    </nav>
+    <div class="main">
+        <section id="home">
+            <h1>Lowbrow</h1>
+        </section>
+        <section id="history">
+            <h1>The Rise</h1>
+        </section>
+        <section id="gallery">
+            <h1>The Art</h1>
+        </section>
+    </div>
 </body>
 </html>

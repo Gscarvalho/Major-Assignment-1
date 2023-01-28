@@ -1,64 +1,37 @@
-.container {
-    min-height: 100vh;    
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: 'Syncopate', sans-serif;
 }
 
-.nav-custom {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1vw;
+.main {
+    margin-left: 10rem;
+    padding: 10px;
 }
 
-.nav-custom a {
-    color: cadetblue !important;
-    font-size: 3vw;
+section {
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+a {
     text-decoration: none;
-}
-
-.-gallery {
-    max-width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-wrap: wrap; 
-}
-
-.artwork img {
-    width: 25vw;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    margin: 0px;
-}
-
-.artwork h2 {
-    /* position: absolute;
-    margin-top: 2%;
-    margin-left: 3vw;
-    font-size: 1.5vw;
-    text-shadow: 0px 0px 6px whitesmoke;
-    color: whitesmoke; */
-}
-.artwork h3 {
-    /* display: flex;
-    justify-content: end;
-    margin-top: -10%;
-    margin-right: 3vw;
-    font-size: 2vw;
-    text-shadow: 0px 0px 6px whitesmoke;
-    color: white; */
+    padding: 3rem;
 }
 
 
-.container {
-    padding: 50px;
-}
 
-.container p {
-    font-size: 1.5vw;
-}
+/* Orientation */
 
-.container img {
-    max-width: 40vw;
-    height: auto;
-}
+@media (orientation: landscape) {
+    body {
+      flex-direction: row;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    body {
+      flex-direction: column;
+    }
+  }
