@@ -10,7 +10,10 @@ nav {
 }
 .custom-nav {
     margin-left: 1rem;  
-    padding-top: 10vh;  
+    padding-top: 10vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
 }
 .custom-icon:hover .icon-ft {
     text-shadow: 0px 0px 0px;
@@ -50,12 +53,12 @@ nav {
 }
 .custom-icon:hover p {
     opacity: 1;
-    transform: translate(0%,-0%);
+    transform: translate(-55%,-0%);
 }
 .custom-icon p {
     transition: all 1s;
     opacity: 0;
-    transform: translate(0%,-150%);
+    transform: translate(-55%,-150%);
 }
 
 

@@ -21,6 +21,6 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: gold;
+    background: var(--color-2);
     
   }
