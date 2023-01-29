@@ -101,7 +101,7 @@ p {
 .previewer div a{
   z-index: 1;
   position: absolute;
-  font-size: 150%;
+  font-size: 120%;
   text-align: center;
   opacity: 0;
   font-weight: bolder;
@@ -112,7 +112,7 @@ p {
 .previewer > div:hover > a{
   opacity: 1;
   color: var(--color-4);
-  margin-top: 35vmin;
+  margin-top: 37vmin;
 }
 
 .previewer > div a:hover {
@@ -163,6 +163,6 @@ p {
     opacity: 1;
     color: whitesmoke;
     text-shadow: 0px 0px 10px white;
-    font-size: 4vmin;
+    font-size: 3vmin;
   }
 }
