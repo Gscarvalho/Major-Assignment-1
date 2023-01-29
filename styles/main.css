@@ -1,37 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: whitesmoke;
-    margin: 0;
-    font-family: 'Syncopate', sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  font-family: 'Syncopate', sans-serif;
 }
 
 .main {
-    margin-left: 10rem;
-    padding: 10px;
+  margin-left: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 section {
-    height: 100vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+  height: 100vh;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  display: block;
 }
 
+.background {
+  position: absolute;
+  z-index: -99;
+}
+
+.bg {
+  position: relative;
+  width: 100vw;
+  height: 110vh;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  right: 0;
+  max-height: 80%;
+  width: 95%;
+  padding: 2%;
+  border-radius: 50px;
+  background-color: gold;
+  /* box-shadow:  0px 0px 30px orange; */
+}
+
+#home p {
+  color: whitesmoke;
+  /* text-shadow: 5px 3px 7px gray; */
+  font-size: 2.1vmin;
+  text-align: justify;
+  
+}
+#history p {
+  font-size: 5vmin;
+  text-align: justify;
+}
 a {
-    text-decoration: none;
-    padding: 3rem;
+  text-decoration: none;
+  padding: 3rem;
 }
 
-
+h1 {
+  font-size: 6em;
+  text-align: end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* Orientation */
 
 @media (orientation: landscape) {
-    body {
-      flex-direction: row;
-    }
-  }
   
-  @media (orientation: portrait) {
-    body {
-      flex-direction: column;
-    }
+  
+}
+  
+@media (orientation: portrait) {
+  h1 {
+    font-size: 4vmax;
+    text-align: end;
+    margin-right: 10%;
   }
+
+  #home p {
+    font-size: 1.1vmax;
+  }
+  #history p {
+    font-size: 1.5vmin;
+  }
+}
