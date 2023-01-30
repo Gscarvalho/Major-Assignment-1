@@ -26,9 +26,10 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: start;
   padding-right: 5%;
   padding-left: 5%;
+  padding-bottom: 5%;
+  justify-content: baseline;
 }
 
 a {
@@ -39,8 +40,13 @@ a {
 h1 {
   font-size: 10vh;
   text-align: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 0; 
+}
+
+h3 {
+  padding-top: 15px;
+  font-size: 2vmax;
 }
 
 p {
@@ -70,10 +76,20 @@ p {
   border-radius: 20px;
   margin-left: 10rem;
 }
-.wrapper-2 p {
-  font-size: 1vmax;
-  line-height: 1.5;
-  color: whitesmoke;
+
+
+.wrapper-3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 80vw;
+  flex: 6;
+  border-radius: 20px;
+  padding-left: 10rem;
+  margin-top: 5%;
 }
 
 .previewer {
@@ -93,27 +109,89 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.art-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: white;
+  border: 5px Inset var(--color-2);
+  box-shadow: 0px 10px 0px var(--shadows);
+  transition: all 1s;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 150%;;
+  color: whitesmoke;
+  text-shadow: 0px 0px 10px white;
+}
+
+.gallery-buttons {
+  display: flex;
+  width: 100%;
+}
+
 /* TARGETED ELEMENTS */
+.art-card h3 {
+  flex:2;
+}
+
+.gallery-buttons a {
+  position: relative;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0%;
+  padding: 0px;
+  font-size: 150%;
+  color: white;
+  cursor: pointer;
+}
+
+.wrapper-2 p {
+  font-size: 1vmax;
+  line-height: 1.5;
+  color: whitesmoke;
+}
+
+.wrapper-3 > div .art-card:hover {
+  flex: 3;
+  background-position: center;
+}
+
+.wrapper-3 > div {
+  display: flex; 
+  flex: 1; 
+  flex-direction: row;
+  aspect-ratio: 1/1;
+  width: 50%;
+}
+
 .previewer > a:hover {
   transform: translate(0px, -15%);
   box-shadow: 0px 15px 0px var(--shadows);
+  background-position: center;
 }
 
 .previewer > a {
   background-size: cover;
-  background-position: center;
+  background-position: top left;
   background-repeat: no-repeat;
   max-height: 90%;
   flex:1;
   border: 5px Inset var(--color-2);
   border-radius: 50px;
-  transition: all .8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+  transition: all .8s ;
+  /* cubic-bezier(0.25, 0.4, 0.45, 1.4); */
   display: flex;
   align-items: center;
   justify-content: center;
   
 }
-
 
 .previewer a p{
   z-index: 1;
@@ -140,9 +218,10 @@ p {
   
 @media (orientation: portrait) {
   section {
-    padding-top: 12%;
+    padding-top: 13%;
     padding-left: 3%;
     padding-right: 3%;
+    padding-bottom: 3%;
     justify-content: center;
 
   }
@@ -156,6 +235,16 @@ p {
     margin-left: 0px;
   }
 
+  .wrapper-3 {
+    margin-left: 0px;
+    padding-left: 0%;
+    padding-top: 45vh;
+  }
+
+  .wrapper-3 > div {
+    flex-direction: column;
+    width: 100%;
+  }
 
   h1 {
     font-size: 4vmax;
@@ -163,12 +252,18 @@ p {
     margin-right: 10%;
   }
 
+  h3 {
+    margin: 0px;
+  }
+  
+
   .previewer {
     flex-direction: column;
     
   }
 
   .previewer > a {
+    background-position: center;
     padding: 0px;
   }
 
