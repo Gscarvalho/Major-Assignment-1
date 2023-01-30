@@ -14,18 +14,17 @@ nav {
     flex-direction: column;
 }
 .custom-icon:hover .icon-ft {
-    text-shadow: 0px 0px 0px;
+    text-shadow: 0px 0px 10px;
 }
 
 .custom-nav .icon-ft {
     position: relative;
     font-size: 5rem;
     color: whitesmoke;
-    text-shadow: 0px 0px 5px;
     transition: all 1s;
 }
 .custom-icon:hover .icon-bg {
-    text-shadow: 0px 0px 30px;
+    text-shadow: 0px 10px 0px var(--shadows);
     
 }
 
@@ -34,7 +33,7 @@ nav {
     z-index: -1;
     font-size: 10rem;
     transform: translate(-25%, -30%);
-    text-shadow: 0px 0px 1px;
+    text-shadow: 0px 0px 0px var(--shadows);
     transition: text-shadow 1s;
 }
 
@@ -56,7 +55,7 @@ nav {
 .custom-icon p {
     transition: all 1s;
     opacity: 0;
-    transform: translate(0%,-150%);
+    transform: translate(0%,-180%);
 }
 
 
