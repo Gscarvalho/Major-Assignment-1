@@ -1,0 +1,97 @@
+#home {
+    justify-content: start;
+}
+
+#home-info {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 40%;
+}
+#home-info p {
+    color: var(--color-4);
+    flex: 3;
+    text-align: center;
+}
+#home-title {
+    flex: 1;
+    font-size: 7vmin;
+    font-weight: bolder;
+    color: var(--color-2);
+    text-shadow: 5px 5px 0px var(--color-4), -5px -5px 0px var(--shadows);
+    /* margin-bottom: -20%; */
+}
+
+#home-gallery {
+    flex: 2.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* min-height: 70%; */
+    gap: 5px
+}
+.home-gallery-card {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.home-gallery-card a{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    border: inset 5px var(--color-2);
+    border-radius: 35px;    
+    
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    text-decoration: none;
+    color: var(--color-4);
+    transition: all 1s;
+}
+
+.home-gallery-card:hover a{
+    margin-top: -25%;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale();
+    opacity: 0.5;
+    box-shadow: 0px 20px 0px var(--shadows);
+}
+.home-gallery-card p{
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    transition: margin 1s, text-shadow 1.3s cubic-bezier(0.175, -0.885, 0.32, 2.275);;
+    font-size: 120%;
+    font-weight: bolder;
+    color: white;
+}
+.home-gallery-card:hover p{
+    margin-top: 10%;
+    opacity: 1;
+    /* text-shadow: 0px 0px 15px var(--color-4); */
+
+    color: transparent;
+    text-shadow:10px 10px 0px white, 10px 10px 10px var(--color-2); 
+            
+}
+
+@media (orientation: portrait) {
+    #home-info {
+        max-height: 20%;
+    }
+    #home-gallery {
+        max-height: 30%;
+    }
+}

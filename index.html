@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<!-- Set the language to English -->
+    <!-- Language Setting -->
 <html lang="en">
-<!-- Head section contains hidden metadata -->
 <head>
-    <!-- Character set to ensure text is displayed properly -->
+    <!-- Character set to ensure compalability across browsers -->
     <meta charset="UTF-8">
-    <!-- File Refernces -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/navigation.css">
-    <link rel="stylesheet" href="styles/media.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- File Refernces -->
+    <link rel="stylesheet" href="styles/main-styles.css">
+    <link rel="stylesheet" href="styles/navigation-styles.css">
+    <link rel="stylesheet" href="styles/home-styles.css">
+    <link rel="stylesheet" href="styles/history-styles.css">
     <link rel="stylesheet" href="styles/misc.css">
-    <link rel="script" href="scripts/main.js">
-    <!-- Fonts from Google -->
+     <!-- Fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
@@ -24,125 +25,83 @@
     <!-- Title is shown on Tab -->
     <title>Lowbrow Art: Site by Gui</title>
 </head>
-<!-- Site Navigation -->
 <body>
-    <nav>
-        <div class="custom-nav">
-            <a href="#home">
-                <div class="custom-icon">
-                    <span style="color: var(--color-2);" class="material-symbols-outlined icon-bg">humidity_high</span>
-                    <span class="material-symbols-outlined icon-ft">home</span>
-                    <p style="color: var(--color-2);"><strong>Home</strong></p>
-                </div>
-            </a>
-            <a href="#history">
-                <div class="custom-icon">
-                    <span style="color: var(--color-3);" class="material-symbols-outlined icon-bg">humidity_high</span>
-                    <span class="material-symbols-outlined icon-ft">history_edu</span>
-                    <p style="color: var(--color-3);"><strong>History</strong></p>
-                </div>
-            </a>
-            <a href="#gallery">
-                <div class="custom-icon">
-                    <span style="color: var(--color-4);" class="material-symbols-outlined icon-bg">humidity_high</span>
-                    <span class="material-symbols-outlined icon-ft">gallery_thumbnail</span>
-                    <p style="color: var(--color-4);"><strong>Gallery</strong></p>
-                </div>
-            </a>
-        </div>
-    </nav>
-    <!--CHECK MAIN.CSS FOR COLOR PALETTE -->
-    
-    <section id="home" style="justify-content: center;">
-        <div class="wrapper glass" style="max-height:35%; width:70%;">
-        <h1 style="color: var(--color-2); text-shadow: 0px 5px 0px var(--shadows)">Lowbrow</h1>
-            <p style="color: var(--color-4);">
-                Lowbrow art, also known as <strong style="color: var(--color-2)">pop surrealism</strong>, is a subculture that emerged in the 1970s
-                and 1980s as a reaction to the highbrow art world. This movement is characterized by 
-                its <strong style="color: var(--color-2)">bold</strong>, <strong style="color: var(--color-2)">provocative</strong> style and use of popular culture references, such as comic books 
-                and graffiti. Lowbrow artists often use <strong style="color: var(--color-2)">bright colors</strong> and <strong style="color: var(--color-2)">exaggerated features</strong> to 
-                create surreal, thought-provoking imagery.
-            </p>
-        </div>
-        <br>
-        <div class="wrapper glass" style="height:35%; width:80%; padding:2%;">
-            <div class="previewer">
-                <a href="#artist-1" style="background-image: url(assets/images/Bouquet-II.jpg);">
-                    <p>JAMES JEAN</p>
-                </a>
-                <a href="#artist-2" style="background-image: url(assets/images/Biala-Koza.jpeg);">
-                    <p>NATALIA FABIA</p>                    
-                </a>
-                <a href="#artist-3" style="background-image: url(assets/images/Bloom.jpg);">
-                    <p>TARA McPHERSON</p>                    
-                </a>
-                <a href="#artist-4" style="background-image: url(assets/images/Community-Zoo.jpg);">
-                    <p>ESAO ANDREWS</p>                   
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="history" style="background-color: var(--color-3); justify-content:baseline;">
-        <h1 style="color: var(--color-3); text-shadow:2px 2px 0px var(--color-2)">The Rise</h1>
-        <div class="wrapper-2">
-            <div style="flex:1; padding:20px;">
+    <!-- Nav -->
+    <div class="custom-nav">
+        <div class="spacer"></div>
+        <a id="home-button" href="#home" class="custom-icon">
+            <span id="home-button-bg" class="material-symbols-outlined icon-bg">humidity_high</span>
+            <div class="material-symbols-outlined button-icon">home</div>
+            <p class="button-title">Home</p>
+        </a>
+        <a id="history-button" href="#history" class="custom-icon">
+            <span id="history-button-bg" class="material-symbols-outlined icon-bg">humidity_high</span>
+            <div class="material-symbols-outlined button-icon">history_edu</div>
+            <p class="button-title">History</p>
+        </a>
+        <a id="gallery-button" href="#gallery" class="custom-icon">
+            <span id="gallery-button-bg" class="material-symbols-outlined icon-bg">humidity_high</span>
+            <div class="material-symbols-outlined button-icon">gallery_thumbnail</div>
+            <p class="button-title">Gallery</p>
+        </a>
+        <div class="spacer"></div>
+    </div>
+    <div class="main-content">
+        <!-- Main Home section -->
+        <section id="home">
+            <!-- Intro Statement -->
+            <div id="home-info" class="wrapper glass">
+                <div class="spacer"></div>
+                <div id="home-title" class="wrapper">Lowbrow</div>
                 <p>
+                    Lowbrow art, also known as <strong style="color: var(--color-2)">pop surrealism</strong>, is a subculture that emerged in the 1970s
+                    and 1980s as a reaction to the highbrow art world. This movement is characterized by 
+                    its <strong style="color: var(--color-2)">bold</strong>, <strong style="color: var(--color-2)">provocative</strong> style and use of popular culture references, such as comic books 
+                    and graffiti. Lowbrow artists often use <strong style="color: var(--color-2)">bright colors</strong> and <strong style="color: var(--color-2)">exaggerated features</strong> to 
+                    create surreal, thought-provoking imagery.
+                </p>
+            </div>
+            <!-- Mini gallery that links to main gallery -->
+            <div id="home-gallery" class="wrapper glass">
+                <div class="home-gallery-card">
+                    <a href="#artist-1"  style="background-image: url(assets/images/Bouquet-II.jpg);"></a>
+                    <p>JAMES<br>JEAN</p>
+                </div>
+                
+                <div class="home-gallery-card">
+                    <a href="#artist-2" style="background-image: url(assets/images/Biala-Koza.jpeg);"></a>
+                    <p>NATALIA<br>FABIA</p>                    
+                </div>
+                
+                <div class="home-gallery-card">
+                    <a href="#artist-3" style="background-image: url(assets/images/Bloom.jpg);"></a>
+                    <p>TARA<br>McPHERSON</p>                    
+                </div>
+                <div class="home-gallery-card">
+                    <a href="#artist-4" style="background-image: url(assets/images/Community-Zoo.jpg);"></a>
+                    <p>ESAO<br>ANDREWS</p>                   
+                </div>
+            </div>
+        </section>
+        <!-- History Section -->
+        <section id="history" class="glass">
+            <div id="history-title" class="wrapper">The Rise</div>
+            <div id="history-mid" class="history-wrapper glass">
+                <div>
                     Lowbrow art is a form of pop culture-inspired art that emerged in the 1970s and 1980s in the United States. The term "lowbrow" was originally used as a derogatory label for the movement, but it was later embraced by the artists themselves. The movement was initially centered around Los Angeles and was heavily influenced by the punk and new wave music scenes of the time.
                     <br>
                     The lowbrow art movement was started by a group of artists who were dissatisfied with the mainstream art world and sought to create work that was more accessible and relatable to the general public. These artists often drew inspiration from popular culture, including comic books, movies, and television shows. They also incorporated elements of traditional art forms, such as painting and illustration, into their work.
                     <br>
                     Lowbrow art often features bold colors, thick lines, and exaggerated forms. The subjects of the artwork are usually pop culture icons, such as cartoon characters, celebrities, and consumer products. The style of lowbrow art is often considered to be a combination of street art, pop art, and underground comics.
                     <br>
-                    The lowbrow art movement quickly gained popularity and began to influence other forms of popular culture. Many lowbrow artists have become successful commercial artists and have been commissioned to create artwork for movies, television shows, and album covers. Some of the most prominent lowbrow artists include Robert Williams, Mark Ryden, and Gary Baseman. 
+                    The lowbrow art movement quickly gained popularity and began to influence other forms of popular culture. Many lowbrow artists have become successful commercial artists and have been commissioned to create artwork for movies, television shows, and album covers. Some of the most prominent lowbrow artists include Robert Williams, Mark Ryden, and Gary Baseman.
                     <br>
                     In recent years, the lowbrow art movement has continued to evolve and has gained even more mainstream acceptance. The movement has also inspired other subcultures, such as the kawaii art movement in Japan, which is heavily influenced by lowbrow art. Today, lowbrow art is considered to be a legitimate form of contemporary art, and is exhibited in galleries and museums around the world.
-                    <br>
-                </p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section id="gallery" style="background-color: var(--color-4); min-height: 100vh">
-        <div class="wrapper-3">
-            <h1 style="color: whitesmoke; text-shadow:10px 5px 0px SteelBlue, -5px -5px 0px var(--shadows);">The Art</h1>
-            <!-- <div class="-gallery" style="flex: 1.5">
-                <div class="art-card card-1" style="background-image: url(assets/images/Lotus-War-Day.jpg)">
-                    <h3>Artist Name</h3>
-                    <div class="gallery-buttons">
-                        <a style="text-align:start;">&leftharpoonup;</a> 
-                        <div style="flex: 4"></div>      
-                        <a style="text-align:end;">&rightharpoonup;</a>
-                    </div>
-                </div> -->
-                <!-- <div class="art-card card-2" style="background-image: url(assets/images/Magnetic-Destroyer.jpg)">
-                    <h3>Artist Name</h3>
-                    <div class="gallery-buttons">
-                        <a style="text-align:start;">&leftharpoonup;</a> 
-                        <div style="flex: 4"></div>      
-                        <a style="text-align:end;">&rightharpoonup;</a>
-                    </div>
-                </div>
-                <div class="art-card card-3" style="background-image: url(assets/images/)">
-                    <h3>Artist Name</h3>
-                    <div class="gallery-buttons">
-                        <a style="text-align:start;">&leftharpoonup;</a> 
-                        <div style="flex: 4"></div>      
-                        <a style="text-align:end;">&rightharpoonup;</a>
-                    </div>
-                </div>
-                <div class="art-card card-4" style="background-image: url(assets/images/)">
-                    <h3>Artist Name</h3>
-                    <div class="gallery-buttons">
-                        <a style="text-align:start;">&leftharpoonup;</a> 
-                        <div style="flex: 4"></div>      
-                        <a style="text-align:end;">&rightharpoonup;</a>
-                    </div>
-                </div> -->
-            </div> 
-            <div style="flex: 2;"></div>
-        </div>
-    </section>
-
+            <div id="history-bottom" class="wrapper history-wrapper">
+            </div>
+        </section>
+    </div>
 </body>
 </html>

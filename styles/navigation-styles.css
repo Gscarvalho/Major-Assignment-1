@@ -1,0 +1,106 @@
+
+.custom-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+
+}
+
+.custom-icon{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 1s;
+    cursor: pointer;
+
+    /* background-color: blue; */
+}
+.custom-icon span{
+    transition: all 1s ease-out;
+}
+.custom-icon div{
+    transition: all 1s ease-out;
+}
+.custom-icon p {
+    position: absolute;
+    transform: all 1s;
+}
+.custom-icon:hover span{
+   margin-top: -30px;
+   text-shadow: 0px 1.5px 0px var(--shadows);
+}
+.custom-icon:hover div {
+   margin-top: -25px;
+}
+.custom-icon:hover p {
+    margin-top: 110px;
+    opacity: 1;
+}
+.button-icon{
+    position: absolute;
+    color: white;
+    transform: scale(3);
+    margin-top: 10px;
+}
+.button-title {
+    z-index: 2;
+    opacity: 0;
+    transition: all 1.2s;
+}
+#home-button p {
+    color: var(--color-2);
+}
+#home-button-bg {
+    color: var(--color-2);
+    position: absolute;
+    transform: scale(5.5);
+}
+#history-button p {
+    color: var(--color-3);
+}
+#history-button-bg {
+    color: var(--color-3);
+    position: absolute;
+    transform: scale(5.5);
+}
+#gallery-button p {
+    color: var(--color-4);
+}
+#gallery-button-bg {
+    color: var(--color-4);
+    position: absolute;
+    transform: scale(5.5);
+}
+
+.spacer {
+    flex: 1;
+}
+
+@media (orientation: portrait) {
+    .custom-nav {
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 15px;
+        margin-top: 15px;
+    }
+    .button-icon {
+        transform: scale(2);
+    }
+    #home-button-bg{
+       transform: scale(3.5);
+    }
+    #history-button-bg{
+        transform: scale(3.5);
+    }
+    #gallery-button-bg{
+        transform: scale(3.5);
+    }
+    .custom-icon:hover p {
+        margin-top: 80px;
+    }
+}

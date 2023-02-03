@@ -1,0 +1,52 @@
+#history {
+    display: flex;
+    margin-top: 10px;
+    background-color: var(--color-3);
+    padding: 2px;
+
+    /* color: var(--color-2); */
+}
+
+
+.history-wrapper {
+    width: 95%;
+    text-align: justify;
+    font-size: 1.5vmin;
+    /* font-size: clamp(1vmax, 2vmin, 2.5vmin); */
+}
+
+#history-title:hover {
+    color: transparent;
+    text-shadow:10px 10px 0px whitesmoke, 
+                10px 10px 10px var(--color-4), 
+                -5px -5px 10px cyan,
+                -5px -5px 0px var(--shadows);
+            }
+#history-title {
+    font-weight: bolder;
+    border-bottom: solid 0.5px whitesmoke;     
+    
+    transform: scale(3);
+    color: white;
+    text-shadow: 0px 0px 0px var(--color-2), 
+    0px 0px 0px var(--color-4);
+    transition: all 1.3s cubic-bezier(0.175, -0.885, 0.32, 2.275);
+
+}       
+#history-mid {
+    flex:4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    /* border: inset 5px white; */
+    box-shadow: 0px 0px ;
+    padding: 5px;
+    /* background-color: whitesmoke; */
+    color: white;
+    text-shadow: 0px 0px 3px whitesmoke;
+    text-align: center;
+}
+#history-bottom {
+
+}
