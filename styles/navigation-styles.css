@@ -1,11 +1,14 @@
 
 .custom-nav {
     flex: 1;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30%;
+    text-align: center;    
+    gap: 35%;
+    background-color: transparent;
 
 }
 
@@ -15,20 +18,21 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: all 1s;
+    transition: all 0.5s;
     cursor: pointer;
 
     /* background-color: blue; */
 }
 .custom-icon span{
-    transition: all 1s ease-out;
+    transition: all 0.4s ease-out;
 }
 .custom-icon div{
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
 }
 .custom-icon p {
+    transform: scale(2);
     position: absolute;
-    transform: all 1s;
+    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1)
 }
 .custom-icon:hover span{
    margin-top: -30px;
@@ -44,7 +48,7 @@
 .button-icon{
     position: absolute;
     color: white;
-    transform: scale(3);
+    transform: scale(2);
     margin-top: 10px;
 }
 .button-title {
@@ -58,7 +62,7 @@
 #home-button-bg {
     color: var(--color-2);
     position: absolute;
-    transform: scale(5.5);
+    transform: scale(5);
 }
 #history-button p {
     color: var(--color-3);
@@ -66,7 +70,7 @@
 #history-button-bg {
     color: var(--color-3);
     position: absolute;
-    transform: scale(5.5);
+    transform: scale(5);
 }
 #gallery-button p {
     color: var(--color-4);
@@ -74,11 +78,7 @@
 #gallery-button-bg {
     color: var(--color-4);
     position: absolute;
-    transform: scale(5.5);
-}
-
-.spacer {
-    flex: 1;
+    transform: scale(5);
 }
 
 @media (orientation: portrait) {
@@ -101,6 +101,6 @@
         transform: scale(3.5);
     }
     .custom-icon:hover p {
-        margin-top: 80px;
+        margin-top: 12%;
     }
 }
