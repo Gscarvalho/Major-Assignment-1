@@ -19,7 +19,8 @@ body {
   margin: 0;
   /* margin-left: 10%;
   margin-right: 10%; */
-  font-family: 'Syncopate', sans-serif;
+  /* font-family: 'Syncopate', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: whitesmoke;
   overflow-x: none;
@@ -38,8 +39,13 @@ section {
   gap: 7%;
 }
 
+h1 {
+  font-family: 'Syncopate', sans-serif;
+}
+
 p {
-  font-size: 1vw;
+  font-size: 1.2vw;
+  /* font-size: clamp(10%, 30%, 30%); */
 }
 
 .wrapper {

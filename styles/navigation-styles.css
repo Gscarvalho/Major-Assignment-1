@@ -9,6 +9,7 @@
     text-align: center;    
     gap: 35%;
     background-color: transparent;
+    margin: 1%;
 
 }
 
@@ -30,7 +31,7 @@
     transition: all 0.5s ease-out;
 }
 .custom-icon p {
-    transform: scale(2);
+    transform: scale(1.2);
     position: absolute;
     transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1)
 }

@@ -39,10 +39,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    padding: 25px;
+    width: 95%;
     /* min-height: 70%; */
-    gap: 10px;
+    gap: 3%;
+    padding: 35px;
 }
 .home-gallery-card {
     flex: 1;
@@ -54,7 +54,6 @@
     width: 100%;
     max-width: 250px;
 }
-
 .home-gallery-card a{
     flex: 1;
     display: flex;
@@ -112,6 +111,9 @@
     }
     .home-gallery-card a{
         background-position: bottom;
+    }
+    .home-gallery-card{
+        max-width: 100%;
     }
     .home-gallery-card p{
         font-size: 100%;
