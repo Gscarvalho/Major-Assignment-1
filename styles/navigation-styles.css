@@ -21,15 +21,16 @@
     text-align: center;
     transition: all 0.5s;
     cursor: pointer;
-
-    /* background-color: blue; */
 }
+
 .custom-icon span{
     transition: all 0.4s ease-out;
 }
+
 .custom-icon div{
     transition: all 0.5s ease-out;
 }
+
 .custom-icon p {
     transform: scale(1.2);
     position: absolute;
@@ -39,43 +40,53 @@
    margin-top: -30px;
    text-shadow: 0px 1.5px 0px var(--shadows);
 }
+
 .custom-icon:hover div {
    margin-top: -25px;
 }
+
 .custom-icon:hover p {
     margin-top: 110px;
     opacity: 1;
 }
+
 .button-icon{
     position: absolute;
     color: white;
     transform: scale(2);
     margin-top: 10px;
 }
+
 .button-title {
     z-index: 2;
     opacity: 0;
     transition: all 1.2s;
 }
+
 #home-button p {
     color: var(--color-2);
 }
+
 #home-button-bg {
     color: var(--color-2);
     position: absolute;
     transform: scale(5);
 }
+
 #history-button p {
     color: var(--color-3);
 }
+
 #history-button-bg {
     color: var(--color-3);
     position: absolute;
     transform: scale(5);
 }
+
 #gallery-button p {
     color: var(--color-4);
 }
+
 #gallery-button-bg {
     color: var(--color-4);
     position: absolute;

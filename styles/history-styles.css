@@ -1,26 +1,19 @@
 #history {
     display: flex;
-    /* margin-top: 10px; */
     background-color: var(--color-3);
     padding: 2px;
     gap: 0;
-    /* color: var(--color-2); */
 }
 
 .history-wrapper:hover  div {
     opacity: 1;
 }
-/* .history-wrapper div {
-    opacity: 0;
-    transition: all 2s;
-} */
+
 .history-wrapper {
     width: 95%;
     text-align: left;
     font-size: 1.5vmin;
-    /* font-size: clamp(1vmax, 2vmin, 2.5vmin); */
 }
-
 
 #history-title:hover {
     color: transparent;
@@ -39,35 +32,30 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* border-bottom: solid 0.5px whitesmoke;      */
-    /* margin-bottom: -10%; */
     color: white;
-    /* -webkit-text-stroke: 1.5px var(--color-2); */
     text-shadow: 0px 0px 0px var(--color-2), 
     0px 0px 0px var(--color-4);
     transition: all 1.3s cubic-bezier(0.175, -0.885, 0.32, 2.275);
 }   
+
 #history-title h1 {
     font-size: 150%;
     font-weight: bolder;
-    
 }    
 
 #history-mid:hover img{
     opacity: 0;
     width: 65%;
 }
+
 #history-mid {
     flex:8;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    /* border: inset 5px white; */
     box-shadow: 0px 0px ;
-    /* padding: 15px; */
     max-width: 85%;
-    /* background-color: whitesmoke; */
     color: white;
     text-shadow: 0px 0px 3px whitesmoke;
     text-align: center;
@@ -76,8 +64,6 @@
 #history-mid img {
     display: flex;
     position: absolute;
-    /* pointer-events: none; */
-    /* margin-bottom: 10%; */
     opacity: 1;
     width: 85%;
     max-height: 90%;
@@ -89,8 +75,8 @@
     font-family: 'Syncopate', sans-serif;
     font-size: 150%;
     text-transform: none;
-    color: white;
-    -webkit-text-stroke: 1px var(--color-2);
+    color: whitesmoke;
+    -webkit-text-stroke: 1px var(--color-4);
     text-shadow: -3px -3px 0px var(--shadows);
 }
 
@@ -102,8 +88,7 @@
     font-size: 280%;
     font-weight: bolder;
     color: whitesmoke;
-    /* text-shadow: 0px 0px 5px var(--color-2); */
-    -webkit-text-stroke: 1px  var(--color-4);
+    -webkit-text-stroke: 1px  var(--color-2);
 }
 
 #history-bottom {

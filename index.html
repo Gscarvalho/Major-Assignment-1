@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="styles/home-styles.css">
     <link rel="stylesheet" href="styles/history-styles.css">
     <link rel="stylesheet" href="styles/gallery-styles.css">
-    <link rel="stylesheet" href="styles/misc.css">
      <!-- Fonts from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,19 +65,19 @@
             <!-- Mini gallery that links to main gallery -->
             <div id="home-gallery" class="wrapper glass">
                 <div class="home-gallery-card">
-                    <a href="#artist-1"  style="background-image: url(assets/images/Bouquet-II.jpg);"></a>
+                    <a href="#artist-1"  style="background-image: url(assets/images/JJ/Bouquet-II.jpg);"></a>
                     <p>JAMES<br>JEAN</p>
                 </div>                
                 <div class="home-gallery-card">
-                    <a href="#artist-2" style="background-image: url(assets/images/Biala-Koza.jpeg);"></a>
+                    <a href="#artist-2" style="background-image: url(assets/images/NF/Biala-Koza.jpeg);"></a>
                     <p>NATALIA<br>FABIA</p>                    
                 </div>                
                 <div class="home-gallery-card">
-                    <a href="#artist-3" style="background-image: url(assets/images/Bloom.jpg);"></a>
+                    <a href="#artist-3" style="background-image: url(assets/images/TM/Bloom.jpg);"></a>
                     <p>TARA<br>McPHERSON</p>                    
                 </div>
                 <div class="home-gallery-card">
-                    <a href="#artist-4" style="background-image: url(assets/images/Community-Zoo.jpg);"></a>
+                    <a href="#artist-4" style="background-image: url(assets/images/EA/Community-Zoo.jpg);"></a>
                     <p>ESAO<br>ANDREWS</p>                   
                 </div>
             </div>
@@ -133,64 +132,46 @@
                 </div>
             </div>
             <div id="history-bottom">
-                <!-- Hover over | Tap the image -->
+                <!-- Spacer -->
             </div>
-            <!-- <div class="spacer"></div> -->
-            <!-- Bottom Spacer of Histroy Section -->
         </section>
         <!-- Gallery Section -->
         <section id="gallery">
             <div class="gallery-title">
                 <h1>Gallery</h1>
+                <p>
+                    Click image to cycle through art
+                </p>
             </div>
-            <div class="gallery-container">
-                <div class="gallery-card">
-                    <div class="gallery-img"></div>
-                    <div class="gallery-buttons-container">
-                        <div class="gallery-button">
-                            <span>&lt;</span>
-                        </div>
-                        <div class="gallery-button">
-                            <span>&gt;</span>
-                        </div>
-                    </div>
+            <div class="gallery-container glass">
+                <!-- James Jean -->
+                <div id="artist-1" class="gallery-card artist1-image1">
+                    <div class="gallery-img">
+                        <h1 class="artist-title">James<br>Jean</h1>
+                    </div>                    
                 </div>
-                <div class="gallery-card">
-                    <div class="gallery-img"></div>
-                    <div class="gallery-buttons-container">
-                        <div class="gallery-button">
-                            <span>&lt;</span>
-                        </div>
-                        <div class="gallery-button">
-                            <span>&gt;</span>
-                        </div>
-                    </div>
+                <!-- Natalia Fabia -->
+                <div id="artist-2" class="gallery-card artist2-image1">
+                    <div class="gallery-img">
+                        <h1 class="artist-title">Natalia<br>Fabia</h1>
+                    </div>                    
                 </div>
-                <div class="gallery-card">
-                    <div class="gallery-img"></div>
-                    <div class="gallery-buttons-container">
-                        <div class="gallery-button">
-                            <span>&lt;</span>
-                        </div>
-                        <div class="gallery-button">
-                            <span>&gt;</span>
-                        </div>
-                    </div>
+                <!-- Tara McPherson -->
+                <div id="artist-3" class="gallery-card artist3-image1">
+                    <div class="gallery-img">
+                        <h1 class="artist-title">Tara<br>McPherson</h1>
+                    </div>                    
                 </div>
-                <div class="gallery-card">
-                    <div class="gallery-img"></div>
-                    <div class="gallery-buttons-container">
-                        <div class="gallery-button">
-                            <span>&lt;</span>
-                        </div>
-                        <div class="gallery-button">
-                            <span>&gt;</span>
-                        </div>
-                    </div>
+                <!-- Esao Andrews -->
+                <div id="artist-4" class="gallery-card artist4-image1">
+                    <div class="gallery-img">
+                        <h1 class="artist-title">Esao<br>Andrews</h1>
+                    </div>                    
                 </div>
                
             </div>
         </section>
     </div>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,27 +1,47 @@
 #gallery{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 100vh;
-    background-color: aqua;
+    gap: 0;
 
+}
+#gallery p {
+    color: var(--color-4);
 }
 .gallery-title {
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: bisque;
+    height: 100%;
+    width: 70%;
+    font-size: 250%;
+    color: whitesmoke;
+    text-shadow: 0px 0px 20px var(--color-4);
+    border-radius: 20px;
+}
+.gallery-title h1{
+    margin-block-start: 1%;
+    margin-block-end: 0;
+}
+.artist-title {
+    position: absolute;
+    transform: scale(.5);
 }
 
 .gallery-container {
-    flex: 9;
+    flex: 19;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin: 5px;
     padding: 25px;
@@ -31,42 +51,90 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     height: 100%;
     transition: all 1.8s ease-in-out;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     
+    border: inset 5px var(--color-2);
+    border-radius: 35px; 
+    background-color: var(--color-1);
 }
 
 .gallery-card:hover {
-    flex: 19;
+    flex: 4;
+    background-size: contain;
 }
 
 .gallery-img {
-    flex: 14;
-    background-image: url("/assets/images/Akaname.jpg");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: inset 5px var(--color-2);
-    border-radius: 35px; 
-}
-
-.gallery-buttons-container {
     flex: 1;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* background-color: blue; */
-}
-
-.gallery-button {
-    flex: 1;
-    background-color: brown;
+    align-items: end;  
     cursor: pointer;
-
 }
 
-.gallery-button:hover {
-    background-color: wheat;
+.gallery-img h1 {
+    text-shadow: 0px 0px 20px var(--color-4);
+}
+
+@media (orientation: portrait) {
+    .gallery-container {
+        flex-direction: column;
+    }
+    .gallery-card {
+        width: 95%;
+    }
+    .gallery-img {
+        width: 100%;
+    }
+    .gallery-img h1 {
+        transform: scale(.6);
+    }
+}
+
+/* I know this is not the most efficient way to create a gallery, 
+but it was the best I could come up with without relying on online solutions */
+
+.artist1-image1 {
+    background-image: url("/assets/images/JJ/Bouquet-II.jpg");
+}
+.artist1-image2{
+    background-image: url("/assets/images/JJ/Descendent-V.jpg");
+}
+.artist1-image3{
+    background-image: url("/assets/images/JJ/Akaname.jpg");
+}
+
+.artist2-image1 {
+    background-image: url("/assets/images/NF/Biala-Koza.jpeg");
+}
+.artist2-image2{
+    background-image: url("/assets/images/NF/Rainbow-Mamas.jpg");
+}
+.artist2-image3{
+    background-image: url("/assets/images/NF/Ravenous.jpg");
+}
+
+.artist3-image1 {
+    background-image: url("/assets/images/TM/Bloom.jpg");
+}
+.artist3-image2{
+    background-image: url("/assets/images/TM/Magnetic-Destroyer.jpg");
+}
+.artist3-image3{
+    background-image: url("/assets/images/TM/Playing-With-Fire-The-Lover.jpg");
+}
+
+.artist4-image1 {
+    background-image: url("/assets/images/EA/Community-Zoo.jpg");
+}
+.artist4-image2{
+    background-image: url("/assets/images/EA/Hi-Hat.jpg");
+}
+.artist4-image3{
+    background-image: url("/assets/images/EA/Rattler.jpg");
 }
